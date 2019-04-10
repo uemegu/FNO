@@ -97,25 +97,32 @@ namespace FNO.iOS
 
         public void StartPlayEffect(string title)
         {
-            if (effect != null)
+            try
             {
-                effect.Stop();
-                effect.Dispose();
-                effect = null;
+                if (effect != null)
+                {
+                    effect.Stop();
+                    effect.Dispose();
+                    effect = null;
+                }
+                var url = NSUrl.FromFilename(title + ".mp3");
+
+                NSError _err = null;
+
+                effect = new AVAudioPlayer(
+                            url,
+                            AVFileType.MpegLayer3,
+                            out _err
+                         );
+
+                effect.NumberOfLoops = 0;
+                effect.PrepareToPlay();
+                effect.Play();
             }
-            var url = NSUrl.FromFilename(title + ".mp3");
-
-            NSError _err = null;
-
-            effect = new AVAudioPlayer(
-                        url,
-                        AVFileType.MpegLayer3,
-                        out _err
-                     );
-
-            effect.NumberOfLoops = 0;
-            effect.PrepareToPlay();
-            effect.Play();
+            catch
+            {
+                //ignore
+            }
         }
 
         private void StopPlayer()
