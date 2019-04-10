@@ -7,4 +7,6 @@ Futatsu Na Online
 
 Xamarin、Firebaseの実装のサンプルとして参考にしてください
 
+Android部分は動きません（旧Eternal Glowの実装が残ってますが動作しないです）
+
 良い実装ではない部分もあると思いますが、とりあえず動作はします・・・
