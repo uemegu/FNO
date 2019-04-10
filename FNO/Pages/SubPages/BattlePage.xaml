@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:BaseSubPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:controls="clr-namespace:FNO.Controls"
+    xmlns:view="clr-namespace:FNO.Pages.SubPages"
+    xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+    x:Class="FNO.Pages.SubPages.BattlePage">
+    <view:BaseSubPage.Content>
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid x:Name="First" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical" x:Name="HasRestCount" IsVisible="false" VerticalOptions="Center">
+                    <Label Text="運命の戦いを開始しますか？"  HorizontalOptions="Center"/>
+                    <Label x:Name="RestCountString"  HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" x:Name="NoRestCount" IsVisible="false" VerticalOptions="Center">
+                    <Label Text="運命の戦いを開始しますか？"  HorizontalOptions="Center"/>
+                    <Label Text="残り回数がないため動画を見る必要があります" FontSize="{StaticResource SmallFontSize}"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+                <controls:NextBack ButtonType="BACK_NEXT" Next="Handle_Next" Back="Handle_Back"
+                                   HorizontalOptions="CenterAndExpand" VerticalOptions="End" Margin="0, 0, 0, 30"/>
+            </Grid>
+            <Grid x:Name="Second" IsVisible="false" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <controls:Charactor BindingContext="{Binding Enemy}" ScaleX="-1" HorizontalOptions="Start"/>
+                <Grid Margin="0,100,0,0">
+                    <Label Text="マッチングしました"  FontSize="{StaticResource MiddleFontSize}" HorizontalOptions="Center"/>
+                </Grid>
+                <Grid HeightRequest="{StaticResource PlateHeight}" VerticalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <controls:NamePlate Grid.Column="0" BindingContext="{Binding Enemy}"/>
+                    <controls:StatusParameters Grid.Column="1" BindingContext="{Binding Enemy}"/>
+                    <controls:MagicCircle VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                           Grid.Column="0" Opacity="0.5"/>
+                    <BoxView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="0.3"
+                             BackgroundColor="{StaticResource Foreground}" Grid.ColumnSpan="2"/>
+                </Grid>
+                <controls:NextBack ButtonType="OK" OK="Handle_OK" x:Name="SecondButton"
+                                   HorizontalOptions="CenterAndExpand" VerticalOptions="End" Margin="0, 0, 0, 30"/>
+            </Grid>
+            <Grid x:Name="Third" IsVisible="false" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="{StaticResource PlateHeight}" />
+                    <RowDefinition />
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <controls:Charactor Grid.Row="1" x:Name="EnemyImage" BindingContext="{Binding Enemy}" ScaleX="-1" HorizontalOptions="Start" VerticalOptions="EndAndExpand"/>
+                <controls:Charactor Grid.Row="1" x:Name="CurrentImage" BindingContext="{Binding Current}" HorizontalOptions="End" VerticalOptions="EndAndExpand"/>
+                <StackLayout Orientation="Horizontal" Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Start" HeightRequest="15">
+                    <controls:Attribute x:Name="EnemyAttribute1" />
+                    <controls:Attribute x:Name="EnemyAttribute2" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Grid.Row="1" VerticalOptions="Start" HorizontalOptions="End" HeightRequest="15">
+                    <controls:Attribute x:Name="CurrentAttribute1" />
+                    <controls:Attribute x:Name="CurrentAttribute2" />
+                </StackLayout>
+                <Grid HeightRequest="{StaticResource PlateHeight}" VerticalOptions="Start">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <controls:NamePlate Grid.Column="0" BindingContext="{Binding Enemy}"/>
+                    <controls:NamePlate Grid.Column="1" BindingContext="{Binding Current}"/>
+                    <controls:MagicCircle VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                           Grid.Column="0" Opacity="0.5"/>
+                    <controls:MagicCircle VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                           Grid.Column="1" Opacity="0.5"/>
+                    <BoxView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="0.3"
+                             BackgroundColor="{StaticResource Foreground}" Grid.ColumnSpan="2"/>
+                </Grid>
+                <Grid VerticalOptions="End" Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <controls:HPBar BindingContext="{Binding Enemy}" Grid.Column="0" />
+                    <controls:HPBar BindingContext="{Binding Current}" Grid.Column="1" />
+                    <Grid x:Name="EnemyDamage" Grid.Column="0" HorizontalOptions="Center"/>
+                    <Grid x:Name="CurrentDamage" Grid.Column="1" HorizontalOptions="Center"/>
+                </Grid>
+                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1">
+                    <Grid x:Name="BattleCommentAreaForEnemy"  VerticalOptions="FillAndExpand" HorizontalOptions="Start"></Grid>
+                    <Grid x:Name="BattleCommentAreaForCurrent" VerticalOptions="FillAndExpand" HorizontalOptions="End"></Grid>
+                </Grid>
+                <BoxView x:Name="LogoBack" IsVisible="false" VerticalOptions="Center" HorizontalOptions="FillAndExpand" 
+                         Grid.Row="1" HeightRequest="{StaticResource PlateHeight}" BackgroundColor="Black" Opacity="0.5" />
+                <lottie:AnimationView 
+                    Grid.Row="1"
+                    x:Name="AnimationView"  
+                    AutoPlay="False" 
+                    Loop="true"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand" />
+            </Grid>
+            <Grid x:Name="Fourth" IsVisible="false" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Label Text="手に入れる二つ名を選択してください" Margin="0, 30, 0, 0" HorizontalOptions="Center"/>
+                <ScrollView Orientation="Vertical" VerticalOptions="CenterAndExpand" Margin="0, 50, 0, 80">
+                    <controls:Chu2NameList x:Name="NameList" VerticalOptions="CenterAndExpand"/>
+                </ScrollView>
+                <controls:TransitionButton Text="Cancel" Clicked="Handle_Cancel" VerticalOptions="End" HorizontalOptions="Center" Margin="10,10,10,30"/>
+            </Grid>
+        </Grid>
+    </view:BaseSubPage.Content>
+</view:BaseSubPage>

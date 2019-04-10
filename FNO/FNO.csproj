@@ -1,0 +1,128 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
+    <PackageReference Include="Fody" Version="3.3.3" />
+    <PackageReference Include="PropertyChanged.Fody" Version="2.6.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Xamarin.Firebase.iOS.Analytics" Version="5.1.4" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="2.7.0" />
+    <PackageReference Include="Xamarin.Auth" Version="1.6.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resouces\MagicCircle.png" />
+    <None Remove="Resouces\Parts\Back.png" />
+    <None Remove="Resouces\Chars\princess.png" />
+    <None Remove="Resouces\Chars\robber.png" />
+    <None Remove="Resouces\Sound\bgm4.mp3" />
+    <None Remove="Resouces\Sound\bgm3.mp3" />
+    <None Remove="Resouces\Sound\bgm2.mp3" />
+    <None Remove="Resouces\Sound\bgm1.mp3" />
+    <None Remove="Models\DummyJson.json" />
+    <None Remove="Resouces\Chars\berserker.png" />
+    <None Remove="Resouces\Chars\devil.png" />
+    <None Remove="Resouces\Chars\hero.png" />
+    <None Remove="Resouces\Chars\madness.png" />
+    <None Remove="Resouces\Chars\god.png" />
+    <None Remove="Resouces\Chars\emperor.png" />
+    <None Remove="Resouces\Chars\boss.PNG" />
+    <None Remove="Resouces\Chars\boss.png" />
+    <None Remove="Resouces\Chars\warrior.PNG" />
+    <None Remove="Resouces\Chars\knight.PNG" />
+    <None Remove="Resouces\Chars\fallenangel.png" />
+    <None Remove="Resouces\Chars\gambler.png" />
+    <None Remove="Resouces\Chars\incarnation.png" />
+    <None Remove="Resouces\Back1.png" />
+    <None Remove="Resouces\Chars\evileye.png" />
+    <None Remove="Resouces\Chars\wiseman.png" />
+    <None Remove="Resouces\Chars\death.png" />
+    <None Remove="Resouces\Chars\disaster.png" />
+    <None Remove="PredictData.json" />
+    <None Remove="NameData.json" />
+    <None Remove="Resouces\CutIn\emperor.png" />
+    <None Remove="Resouces\CutIn\barserker.png" />
+    <None Remove="Resouces\CutIn\boss.png" />
+    <None Remove="Resouces\CutIn\death.png" />
+    <None Remove="Resouces\CutIn\devil.png" />
+    <None Remove="Resouces\CutIn\disaster.png" />
+    <None Remove="Resouces\CutIn\fallenangel.png" />
+    <None Remove="Resouces\CutIn\gambler.png" />
+    <None Remove="Resouces\CutIn\hero.png" />
+    <None Remove="Resouces\CutIn\knight.png" />
+    <None Remove="Resouces\CutIn\madness.png" />
+    <None Remove="Resouces\CutIn\robber.png" />
+    <None Remove="Resouces\CutIn\warrior.png" />
+    <None Remove="Resouces\CutIn\wiseman.png" />
+    <None Remove="Resouces\CutIn\evileye.png" />
+    <None Remove="Resouces\CutIn\god.png" />
+    <None Remove="Resouces\CutIn\nightmare.png" />
+    <None Remove="Resouces\CutIn\princess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resouces\MagicCircle.png" />
+    <EmbeddedResource Include="Resouces\Parts\Back.png" />
+    <EmbeddedResource Include="Resouces\Chars\princess.png" />
+    <EmbeddedResource Include="Resouces\Chars\robber.png" />
+    <EmbeddedResource Include="Models\DummyJson.json" />
+    <EmbeddedResource Include="Resouces\Chars\berserker.png" />
+    <EmbeddedResource Include="Resouces\Chars\devil.png" />
+    <EmbeddedResource Include="Resouces\Chars\hero.png" />
+    <EmbeddedResource Include="Resouces\Chars\madness.png" />
+    <EmbeddedResource Include="Resouces\Chars\god.png" />
+    <EmbeddedResource Include="Resouces\Chars\emperor.png" />
+    <EmbeddedResource Include="Resouces\Chars\boss.png" />
+    <EmbeddedResource Include="Resouces\Chars\warrior.png" />
+    <EmbeddedResource Include="Resouces\Chars\knight.png" />
+    <EmbeddedResource Include="Resouces\Chars\fallenangel.png" />
+    <EmbeddedResource Include="Resouces\Chars\gambler.png" />
+    <EmbeddedResource Include="Resouces\Chars\nightmare.png" />
+    <EmbeddedResource Include="Resouces\Back1.png" />
+    <EmbeddedResource Include="Resouces\Chars\evileye.png" />
+    <EmbeddedResource Include="Resouces\Chars\wiseman.png" />
+    <EmbeddedResource Include="Resouces\Chars\death.png" />
+    <EmbeddedResource Include="Resouces\Chars\disaster.png" />
+    <EmbeddedResource Include="PredictData.json" />
+    <EmbeddedResource Include="NameData.json" />
+    <EmbeddedResource Include="Resouces\CutIn\emperor.png" />
+    <EmbeddedResource Include="Resouces\CutIn\barserker.png" />
+    <EmbeddedResource Include="Resouces\CutIn\boss.png" />
+    <EmbeddedResource Include="Resouces\CutIn\death.png" />
+    <EmbeddedResource Include="Resouces\CutIn\devil.png" />
+    <EmbeddedResource Include="Resouces\CutIn\disaster.png" />
+    <EmbeddedResource Include="Resouces\CutIn\fallenangel.png" />
+    <EmbeddedResource Include="Resouces\CutIn\gambler.png" />
+    <EmbeddedResource Include="Resouces\CutIn\hero.png" />
+    <EmbeddedResource Include="Resouces\CutIn\knight.png" />
+    <EmbeddedResource Include="Resouces\CutIn\madness.png" />
+    <EmbeddedResource Include="Resouces\CutIn\robber.png" />
+    <EmbeddedResource Include="Resouces\CutIn\warrior.png" />
+    <EmbeddedResource Include="Resouces\CutIn\wiseman.png" />
+    <EmbeddedResource Include="Resouces\CutIn\evileye.png" />
+    <EmbeddedResource Include="Resouces\CutIn\god.png" />
+    <EmbeddedResource Include="Resouces\CutIn\nightmare.png" />
+    <EmbeddedResource Include="Resouces\CutIn\princess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Pages\SubPages\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Controls\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MainPage.cs" />
+    <Compile Remove="MainPage.xaml.cs" />
+    <Compile Remove="Utils\CreateSaveData.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FNO.Controls.Explanation">
+    <ContentView.Content>
+        <Grid x:Name="Area" Padding="20">
+            <ScrollView Orientation="Vertical">
+                <BoxView x:Name="Back" BackgroundColor="{StaticResource Foreground}" 
+                         VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="Discription" Text="{Binding Text}" IsVisible="false"
+                       VerticalOptions="Center" HorizontalOptions="CenterAndExpand" />
+            </ScrollView>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

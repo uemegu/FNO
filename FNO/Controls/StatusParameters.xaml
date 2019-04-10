@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FNO.Controls.StatusParameters">
+    <ContentView.Content>
+        <Grid HeightRequest="{StaticResource PlateHeight}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackLayout Orientation="Vertical" Grid.Column="0" HorizontalOptions="End" VerticalOptions="CenterAndExpand">
+                <Grid>
+                    <Label Text="体力" VerticalOptions="Center" TextColor="{StaticResource Background}" Margin="1,1,0,0"/>
+                    <Label Text="体力" VerticalOptions="Center" TextColor="{StaticResource ItemLabelColor}"/>
+                </Grid>
+                <Grid>
+                    <Label Text="回避率" VerticalOptions="Center" TextColor="{StaticResource Background}" Margin="1,1,0,0"/>
+                    <Label Text="回避率" VerticalOptions="Center" TextColor="{StaticResource ItemLabelColor}"/>
+                </Grid>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Grid.Column="1" HorizontalOptions="Start" Padding="20,0,0,0" Margin="2,2,0,0" VerticalOptions="CenterAndExpand">
+                <Label Text="{Binding HP}" FontSize="{StaticResource MiddleFontSize}" VerticalOptions="Center" HorizontalOptions="End" TextColor="{StaticResource Background}"/>
+                <Label Text="{Binding DEX}"  FontSize="{StaticResource MiddleFontSize}" VerticalOptions="Center" HorizontalOptions="End" TextColor="{StaticResource Background}"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Grid.Column="1" HorizontalOptions="Start" Padding="20,0,0,0" VerticalOptions="CenterAndExpand">
+                <Label Text="{Binding HP}" FontSize="{StaticResource MiddleFontSize}" VerticalOptions="Center" HorizontalOptions="End"/>
+                <Label Text="{Binding DEX}"  FontSize="{StaticResource MiddleFontSize}" VerticalOptions="Center" HorizontalOptions="End"/>
+            </StackLayout>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

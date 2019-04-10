@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:controls="clr-namespace:FNO.Controls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="FNO.Controls.Explanation2">
+    <ContentView.Content>
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <BoxView BackgroundColor="{StaticResource Background}" Opacity="0.8" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <controls:Explanation x:Name="Explain"  Margin="0,30,0,40"/>
+            <controls:TransitionButton Text="Close" x:Name="BackButton" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Margin="10, 10, 10, 30"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

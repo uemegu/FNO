@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:controls="clr-namespace:FNO.Controls"
+    x:Class="FNO.Controls.Chu2Name">
+    <ContentView.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="{StaticResource PlateHeight}" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" BackgroundColor="{Binding CharactorColor}">
+                <Label x:Name="AttributeLabel2" TextColor="{StaticResource Background}" IsVisible="false" 
+                       Text="{Binding AttributeName}" FontSize="{StaticResource LargeFontSize}" 
+                       HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="2,2,0,0"/>
+                <Label x:Name="AttributeLabel" TextColor="{StaticResource ItemLabelColor}" IsVisible="false" 
+                       Text="{Binding AttributeName}" FontSize="{StaticResource LargeFontSize}" 
+                       HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+                <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" x:Name="NameContainer2">
+                    <Label Text="{Binding Chu2Name}" FontSize="{StaticResource MiddleFontSize}" HorizontalOptions="Center" TextColor="{StaticResource Background}" Margin="2,2,0,0"/>
+                    <Label Text="{Binding Job}"  FontSize="{StaticResource SmallFontSize}" HorizontalOptions="Center" TextColor="{StaticResource Background}" Margin="2,2,0,0"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" x:Name="NameContainer">
+                    <Label Text="{Binding Chu2Name}" FontSize="{StaticResource MiddleFontSize}" HorizontalOptions="Center"/>
+                    <Label Text="{Binding Job}"  FontSize="{StaticResource SmallFontSize}" HorizontalOptions="Center"/>
+                </StackLayout>
+                <controls:StatusParameters x:Name="Parameter" IsVisible="false" HorizontalOptions="End" VerticalOptions="Center" />
+                <BoxView HeightRequest="2" BackgroundColor="{StaticResource Foreground}" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Opacity="0.7"/>
+                <BoxView HeightRequest="2" BackgroundColor="{StaticResource Foreground}" VerticalOptions="End" HorizontalOptions="FillAndExpand" Opacity="0.7"/>
+            </Grid>
+            <Label Grid.Row="1" x:Name="AttributeType" VerticalOptions="Center" HorizontalOptions="Center"
+               FontSize="{StaticResource SmallFontSize}" TextColor="{StaticResource AccentColor}" IsVisible="false"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

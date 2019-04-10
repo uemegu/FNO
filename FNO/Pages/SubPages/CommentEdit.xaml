@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:BaseSubPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:view="clr-namespace:FNO.Pages.SubPages"
+    xmlns:controls="clr-namespace:FNO.Controls"
+    x:Class="FNO.Pages.SubPages.CommentEdit">
+    <view:BaseSubPage.Content>
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <ScrollView Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                    <Label Text="買った時のセリフ(20文字以内)" />
+                    <Entry x:Name="WinEntry" WidthRequest="200" Margin="0,0,0,20" TextChanged="Handle_TextChanged"/>
+                    <Label Text="負けた時のセリフ(20文字以内)" />
+                    <Entry x:Name="LoseEntry" WidthRequest="200" Margin="0,0,0,20" TextChanged="Handle_TextChanged"/>
+                    <Label Text="戦闘中のセリフ１〜３(20文字以内)" />
+                    <Entry x:Name="BattleEntry1" WidthRequest="200" TextChanged="Handle_TextChanged"/>
+                    <Entry x:Name="BattleEntry2" WidthRequest="200" TextChanged="Handle_TextChanged"/>
+                    <Entry x:Name="BattleEntry3" WidthRequest="200" Margin="0,0,0,20" TextChanged="Handle_TextChanged"/>
+                </StackLayout>
+            </ScrollView>
+            <controls:TransitionButton Text="Back" x:Name="BackButton" Clicked="Handle_Clicked" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Margin="0, 0, 0, 30"/>
+        </Grid>
+    </view:BaseSubPage.Content>
+</view:BaseSubPage>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FNO.Controls.CutInFace">
+    <ContentView.Content>
+        <Grid x:Name="Area">
+            <Grid Padding="0, 20, 0, 20" VerticalOptions="Center" HorizontalOptions="FillAndExpand" HeightRequest="150">
+                <BoxView x:Name="Back" BackgroundColor="{Binding CharactorColor}" 
+                         VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                <Image x:Name="Img" Source="{Binding CharactorCutInImage}" BackgroundColor="{Binding CharactorColor}"
+                       VerticalOptions="FillAndExpand" HorizontalOptions="Fill" Aspect="AspectFill"/>
+                <BoxView HeightRequest="2" BackgroundColor="{StaticResource Foreground}" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Opacity="0.7"/>
+                <BoxView HeightRequest="2" BackgroundColor="{StaticResource Foreground}" VerticalOptions="End" HorizontalOptions="FillAndExpand" Opacity="0.7"/>
+                <Label x:Name="Discription" FontSize="{StaticResource MiddleFontSize}" Margin="0, -165, 0, 0"
+                       VerticalOptions="Center" HorizontalOptions="Center" TextColor="{StaticResource AccentColor}"/>
+            </Grid>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

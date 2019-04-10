@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:BasePage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:view="clr-namespace:FNO.Pages"
+    xmlns:controls="clr-namespace:FNO.Controls"
+    x:Class="FNO.Pages.StartPage">
+    <view:BasePage.Content>
+        <Grid>
+            <Image x:Name="BackImage" Aspect="Fill" ></Image>
+            <Grid x:Name="First">
+                <controls:MagicCircle VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                <Label Text="FNO" FontSize="52" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                <Label Text="Futatsu Na Online" FontSize="12" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0, 50, 0, 0"></Label>
+                <controls:TransitionButton Text="START" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+                                           Margin="0, 280, 0, 0" Clicked="Handle_Clicked"></controls:TransitionButton>
+                <Button Text="データ移行" VerticalOptions="End" HorizontalOptions="End" FontSize="{StaticResource SmallFontSize}"
+                        Margin="0, 0, 10, 10" Clicked="Handle_Clicked2"></Button>
+                <Button Text="データ初期化" VerticalOptions="End" HorizontalOptions="Start" FontSize="{StaticResource SmallFontSize}"
+                        Margin="10, 0, 0, 10" Clicked="Handle_Clicked5Async"></Button>
+            </Grid>
+            <Grid x:Name="Second" IsVisible="false">
+                <Entry x:Name="PWEntry" WidthRequest="200" Placeholder="復活の呪文"
+                       VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                <Label Text="移行元端末で表示されている復活の呪文を入力してください" FontSize="12"
+                       VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0, 50, 0, 0"></Label>
+                <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0, 280, 0, 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <controls:TransitionButton Text="OK" Grid.Column="0" Clicked="Handle_Clicked3"></controls:TransitionButton>
+                    <controls:TransitionButton Text="CANCEL" Grid.Column="1" Clicked="Handle_Clicked4"></controls:TransitionButton>
+                </Grid>
+            </Grid>
+        </Grid>
+    </view:BasePage.Content>
+</view:BasePage>

@@ -1,0 +1,877 @@
+﻿{
+  "ImageMaster": [
+    {
+      "Code": 1,
+      "Value": "berserker.png"
+    },
+    {
+      "Code": 2,
+      "Value": "devil.png"
+    },
+    {
+      "Code": 3,
+      "Value": "hero.png"
+    },
+    {
+      "Code": 4,
+      "Value": "madness.png"
+    },
+    {
+      "Code": 5,
+      "Value": "god.png"
+    },
+    {
+      "Code": 6,
+      "Value": "emperor.png"
+    },
+    {
+      "Code": 7,
+      "Value": "knight.png"
+    },
+    {
+      "Code": 8,
+      "Value": "boss.png"
+    },
+    {
+      "Code": 9,
+      "Value": "warrior.png"
+    },
+    {
+      "Code": 10,
+      "Value": "fallenangel.png"
+    },
+    {
+      "Code": 11,
+      "Value": "gambler.png"
+    },
+    {
+      "Code": 12,
+      "Value": "wiseman.png"
+    },
+    {
+      "Code": 13,
+      "Value": "nightmare.png"
+    },
+    {
+      "Code": 14,
+      "Value": "death.png"
+    },
+    {
+      "Code": 15,
+      "Value": "disaster.png"
+    },
+    {
+      "Code": 16,
+      "Value": "robber.png"
+    },
+    {
+      "Code": 17,
+      "Value": "princess.png"
+    },
+    {
+      "Code": 18,
+      "Value": "evileye.png"
+    }
+  ],
+  "NameMaster": [
+    {
+      "Code": 1,
+      "Attribute": 4,
+      "Value": "黒き"
+    },
+    {
+      "Code": 2,
+      "Attribute": 4,
+      "Value": "漆黒の"
+    },
+    {
+      "Code": 2,
+      "Attribute": 4,
+      "Value": "暗黒の"
+    },
+    {
+      "Code": 3,
+      "Attribute": 4,
+      "Value": "闇夜の"
+    },
+    {
+      "Code": 4,
+      "Attribute": 4,
+      "Value": "常闇の"
+    },
+    {
+      "Code": 5,
+      "Attribute": 11,
+      "Value": "大袈裟な"
+    },
+    {
+      "Code": 6,
+      "Attribute": 9,
+      "Value": "深淵の"
+    },
+    {
+      "Code": 7,
+      "Attribute": 8,
+      "Value": "夜空の"
+    },
+    {
+      "Code": 8,
+      "Attribute": 18,
+      "Value": "天空の"
+    },
+    {
+      "Code": 9,
+      "Attribute": 15,
+      "Value": "最強の"
+    },
+    {
+      "Code": 10,
+      "Attribute": 10,
+      "Value": "泣く子も黙る"
+    },
+    {
+      "Code": 11,
+      "Attribute": 6,
+      "Value": "大いなる"
+    },
+    {
+      "Code": 12,
+      "Attribute": 7,
+      "Value": "遥か彼方の"
+    },
+    {
+      "Code": 13,
+      "Attribute": 3,
+      "Value": "恍惚の"
+    },
+    {
+      "Code": 14,
+      "Attribute": 16,
+      "Value": "慟哭の"
+    },
+    {
+      "Code": 15,
+      "Attribute": 4,
+      "Value": "闇の"
+    },
+    {
+      "Code": 16,
+      "Attribute": 18,
+      "Value": "光の"
+    },
+    {
+      "Code": 17,
+      "Attribute": 1,
+      "Value": "紅の"
+    },
+    {
+      "Code": 18,
+      "Attribute": 3,
+      "Value": "青の"
+    },
+    {
+      "Code": 19,
+      "Attribute": 1,
+      "Value": "炎の"
+    },
+    {
+      "Code": 20,
+      "Attribute": 5,
+      "Value": "電光石火の"
+    },
+    {
+      "Code": 21,
+      "Attribute": 7,
+      "Value": "世界最速の"
+    },
+    {
+      "Code": 22,
+      "Attribute": 14,
+      "Value": "絶望の"
+    },
+    {
+      "Code": 23,
+      "Attribute": 8,
+      "Value": "禍々しい"
+    },
+    {
+      "Code": 24,
+      "Attribute": 7,
+      "Value": "いきなり"
+    },
+    {
+      "Code": 25,
+      "Attribute": 13,
+      "Value": "無情な"
+    },
+    {
+      "Code": 26,
+      "Attribute": 13,
+      "Value": "無慈悲な"
+    },
+    {
+      "Code": 27,
+      "Attribute": 18,
+      "Value": "伝説の"
+    },
+    {
+      "Code": 28,
+      "Attribute": 7,
+      "Value": "蒼天の"
+    },
+    {
+      "Code": 29,
+      "Attribute": 2,
+      "Value": "安寧の"
+    },
+    {
+      "Code": 30,
+      "Attribute": 2,
+      "Value": "妖艶の"
+    },
+    {
+      "Code": 31,
+      "Attribute": 18,
+      "Value": "正義の"
+    },
+    {
+      "Code": 32,
+      "Attribute": 1,
+      "Value": "不屈の"
+    },
+    {
+      "Code": 33,
+      "Attribute": 12,
+      "Value": "強欲の"
+    },
+    {
+      "Code": 34,
+      "Attribute": 6,
+      "Value": "悠遠の"
+    },
+    {
+      "Code": 35,
+      "Attribute": 14,
+      "Value": "最弱の"
+    },
+    {
+      "Code": 36,
+      "Attribute": 10,
+      "Value": "怒髪天の"
+    },
+    {
+      "Code": 37,
+      "Attribute": 14,
+      "Value": "孤高の"
+    },
+    {
+      "Code": 38,
+      "Attribute": 16,
+      "Value": "偽善の"
+    },
+    {
+      "Code": 39,
+      "Attribute": 17,
+      "Value": "虚空の"
+    },
+    {
+      "Code": 40,
+      "Attribute": 16,
+      "Value": "繚乱の"
+    },
+    {
+      "Code": 41,
+      "Attribute": 5,
+      "Value": "雲霞の"
+    },
+    {
+      "Code": 42,
+      "Attribute": 6,
+      "Value": "終極の"
+    },
+    {
+      "Code": 43,
+      "Attribute": 5,
+      "Value": "雷霆の"
+    },
+    {
+      "Code": 44,
+      "Attribute": 7,
+      "Value": "幻影の"
+    },
+    {
+      "Code": 45,
+      "Attribute": 6,
+      "Value": "灰塵の"
+    },
+    {
+      "Code": 46,
+      "Attribute": 4,
+      "Value": "黙示の"
+    },
+    {
+      "Code": 47,
+      "Attribute": 1,
+      "Value": "肉欲の"
+    },
+    {
+      "Code": 48,
+      "Attribute": 2,
+      "Value": "暴食の"
+    },
+    {
+      "Code": 49,
+      "Attribute": 1,
+      "Value": "憤怒の"
+    },
+    {
+      "Code": 50,
+      "Attribute": 3,
+      "Value": "狂乱の"
+    },
+    {
+      "Code": 51,
+      "Attribute": 3,
+      "Value": "嫉妬の"
+    },
+    {
+      "Code": 52,
+      "Attribute": 7,
+      "Value": "空漠の"
+    },
+    {
+      "Code": 53,
+      "Attribute": 18,
+      "Value": "天弓の"
+    },
+    {
+      "Code": 54,
+      "Attribute": 18,
+      "Value": "一日一善の"
+    },
+    {
+      "Code": 55,
+      "Attribute": 7,
+      "Value": "雲鬢の"
+    },
+    {
+      "Code": 56,
+      "Attribute": 1,
+      "Value": "活炎激発の"
+    },
+    {
+      "Code": 57,
+      "Attribute": 7,
+      "Value": "疾風迅雷の"
+    },
+    {
+      "Code": 58,
+      "Attribute": 2,
+      "Value": "花鳥風月の"
+    },
+    {
+      "Code": 59,
+      "Attribute": 5,
+      "Value": "英姿颯爽の"
+    },
+    {
+      "Code": 60,
+      "Attribute": 3,
+      "Value": "月下氷人の"
+    },
+    {
+      "Code": 61,
+      "Attribute": 4,
+      "Value": "竜頭蛇尾の"
+    },
+    {
+      "Code": 62,
+      "Attribute": 18,
+      "Value": "天衣無縫の"
+    },
+    {
+      "Code": 63,
+      "Attribute": 17,
+      "Value": "有言実行の"
+    },
+    {
+      "Code": 64,
+      "Attribute": 16,
+      "Value": "獅子奮闘の"
+    },
+    {
+      "Code": 65,
+      "Attribute": 12,
+      "Value": "百花繚乱の"
+    },
+    {
+      "Code": 66,
+      "Attribute": 11,
+      "Value": "抱腹絶倒の"
+    },
+    {
+      "Code": 67,
+      "Attribute": 15,
+      "Value": "破天荒な"
+    },
+    {
+      "Code": 68,
+      "Attribute": 8,
+      "Value": "意地悪な"
+    },
+    {
+      "Code": 69,
+      "Attribute": 1,
+      "Value": "大雑把な"
+    },
+    {
+      "Code": 70,
+      "Attribute": 5,
+      "Value": "大ボラ吹きの"
+    },
+    {
+      "Code": 71,
+      "Attribute": 4,
+      "Value": "嘘つき"
+    },
+    {
+      "Code": 72,
+      "Attribute": 6,
+      "Value": "見習い"
+    },
+    {
+      "Code": 73,
+      "Attribute": 7,
+      "Value": "音速の"
+    },
+    {
+      "Code": 74,
+      "Attribute": 7,
+      "Value": "光速の"
+    },
+    {
+      "Code": 75,
+      "Attribute": 4,
+      "Value": "混乱の"
+    },
+    {
+      "Code": 76,
+      "Attribute": 4,
+      "Value": "錯乱の"
+    },
+    {
+      "Code": 77,
+      "Attribute": 15,
+      "Value": "バーサク"
+    },
+    {
+      "Code": 78,
+      "Attribute": 17,
+      "Value": "厨二病の"
+    },
+    {
+      "Code": 79,
+      "Attribute": 9,
+      "Value": "恋する"
+    },
+    {
+      "Code": 80,
+      "Attribute": 4,
+      "Value": "ナイトメア"
+    },
+    {
+      "Code": 81,
+      "Attribute": 2,
+      "Value": "ビューティフル"
+    },
+    {
+      "Code": 82,
+      "Attribute": 1,
+      "Value": "怒り心頭の"
+    }
+  ],
+  "JobMaster": [
+    {
+      "Code": 1,
+      "Value": "狂戦士",
+      "HP": 200,
+      "DEX": 0
+    },
+    {
+      "Code": 2,
+      "Value": "魔王",
+      "HP": 196,
+      "DEX": 1
+    },
+    {
+      "Code": 3,
+      "Value": "覇王",
+      "HP": 192,
+      "DEX": 2
+    },
+    {
+      "Code": 4,
+      "Value": "狂気",
+      "HP": 188,
+      "DEX": 3
+    },
+    {
+      "Code": 5,
+      "Value": "神",
+      "HP": 184,
+      "DEX": 4
+    },
+    {
+      "Code": 6,
+      "Value": "支配者",
+      "HP": 180,
+      "DEX": 5
+    },
+    {
+      "Code": 7,
+      "Value": "騎士",
+      "HP": 176,
+      "DEX": 6
+    },
+    {
+      "Code": 8,
+      "Value": "黒幕",
+      "HP": 172,
+      "DEX": 7
+    },
+    {
+      "Code": 9,
+      "Value": "戦士",
+      "HP": 168,
+      "DEX": 8
+    },
+    {
+      "Code": 10,
+      "Value": "堕天使",
+      "HP": 160,
+      "DEX": 10
+    },
+    {
+      "Code": 11,
+      "Value": "ギャンブラー",
+      "HP": 156,
+      "DEX": 11
+    },
+    {
+      "Code": 12,
+      "Value": "賢者",
+      "HP": 148,
+      "DEX": 13
+    },
+    {
+      "Code": 13,
+      "Value": "ナイトメア",
+      "HP": 144,
+      "DEX": 14
+    },
+    {
+      "Code": 14,
+      "Value": "死神",
+      "HP": 140,
+      "DEX": 15
+    },
+    {
+      "Code": 15,
+      "Value": "厄災",
+      "HP": 120,
+      "DEX": 20
+    },
+    {
+      "Code": 16,
+      "Value": "盗賊",
+      "HP": 116,
+      "DEX": 21
+    },
+    {
+      "Code": 17,
+      "Value": "魔法使い",
+      "HP": 100,
+      "DEX": 25
+    },
+    {
+      "Code": 18,
+      "Value": "邪気眼",
+      "HP": 96,
+      "DEX": 26
+    }
+  ],
+  "ColorMaster": [
+    {
+      "Code": 1,
+      "Value": "#B20000"
+    },
+    {
+      "Code": 2,
+      "Value": "#004E91"
+    },
+    {
+      "Code": 3,
+      "Value": "#001DFF"
+    },
+    {
+      "Code": 4,
+      "Value": "#000000"
+    },
+    {
+      "Code": 5,
+      "Value": "#B9D100"
+    },
+    {
+      "Code": 6,
+      "Value": "#965E04"
+    },
+    {
+      "Code": 7,
+      "Value": "#3F9A18"
+    },
+    {
+      "Code": 8,
+      "Value": "#740090"
+    },
+    {
+      "Code": 9,
+      "Value": "#FF009D"
+    },
+    {
+      "Code": 10,
+      "Value": "#FF0000"
+    },
+    {
+      "Code": 11,
+      "Value": "#624F4F"
+    },
+    {
+      "Code": 12,
+      "Value": "#B1257B"
+    },
+    {
+      "Code": 13,
+      "Value": "#737705"
+    },
+    {
+      "Code": 14,
+      "Value": "#2D5764"
+    },
+    {
+      "Code": 15,
+      "Value": "#711313"
+    },
+    {
+      "Code": 16,
+      "Value": "#43773C"
+    },
+    {
+      "Code": 17,
+      "Value": "#BCB506"
+    },
+    {
+      "Code": 18,
+      "Value": "#FAFAFA"
+    }
+  ],
+  "AttributeMaster": [
+    {
+      "Code": 1,
+      "Value": "火",
+      "Type": 0,
+      "DistanceFromCenter": 3,
+      "StrongAttackTarget": [ 3, 13, 16 ],
+      "NeighborAttribute": [ 5, 9, 6, 11 ]
+    },
+    {
+      "Code": 2,
+      "Value": "水",
+      "Type": 0,
+      "DistanceFromCenter": 3,
+      "StrongAttackTarget": [ 9, 5 ],
+      "NeighborAttribute": [ 4, 15, 3, 13, 16 ]
+    },
+    {
+      "Code": 3,
+      "Value": "氷",
+      "Type": 0,
+      "DistanceFromCenter": 3,
+      "StrongAttackTarget": [ 1, 8, 17 ],
+      "NeighborAttribute": [ 7, 12, 10, 2 ]
+    },
+    {
+      "Code": 4,
+      "Value": "闇",
+      "Type": 0,
+      "DistanceFromCenter": 3,
+      "StrongAttackTarget": [ 14, 18 ],
+      "NeighborAttribute": [ 6, 11, 2, 10 ]
+    },
+    {
+      "Code": 5,
+      "Value": "雷",
+      "Type": 0,
+      "DistanceFromCenter": 3,
+      "StrongAttackTarget": [ 2, 10 ],
+      "NeighborAttribute": [ 1, 8, 17, 14, 18 ]
+    },
+    {
+      "Code": 6,
+      "Value": "土",
+      "Type": 0,
+      "DistanceFromCenter": 3,
+      "StrongAttackTarget": [ 7, 12 ],
+      "NeighborAttribute": [ 1, 8, 17, 4, 15 ]
+    },
+    {
+      "Code": 7,
+      "Value": "風",
+      "Type": 0,
+      "DistanceFromCenter": 3,
+      "StrongAttackTarget": [ 6, 11 ],
+      "NeighborAttribute": [ 14, 18, 3, 13, 16 ]
+    },
+    {
+      "Code": 8,
+      "Value": "腐",
+      "Type": 1,
+      "DistanceFromCenter": 2,
+      "StrongAttackTarget": [ 3, 13, 16 ],
+      "NeighborAttribute": [ 5, 9, 6, 11 ]
+    },
+    {
+      "Code": 9,
+      "Value": "萌",
+      "Type": 1,
+      "DistanceFromCenter": 2,
+      "StrongAttackTarget": [ 2, 10 ],
+      "NeighborAttribute": [ 1, 8, 17, 14, 18 ]
+    },
+    {
+      "Code": 10,
+      "Value": "憤",
+      "Type": 1,
+      "DistanceFromCenter": 2,
+      "StrongAttackTarget": [ 9, 5 ],
+      "NeighborAttribute": [ 4, 15, 3, 13, 16 ]
+    },
+    {
+      "Code": 11,
+      "Value": "隠",
+      "Type": 1,
+      "DistanceFromCenter": 2,
+      "StrongAttackTarget": [ 7, 12 ],
+      "NeighborAttribute": [ 1, 8, 17, 4, 15 ]
+    },
+    {
+      "Code": 12,
+      "Value": "妹",
+      "Type": 1,
+      "DistanceFromCenter": 2,
+      "StrongAttackTarget": [ 6, 11 ],
+      "NeighborAttribute": [ 14, 18, 3, 13, 16 ]
+    },
+    {
+      "Code": 13,
+      "Value": "慈",
+      "Type": 1,
+      "DistanceFromCenter": 2,
+      "StrongAttackTarget": [ 1, 8, 17 ],
+      "NeighborAttribute": [ 7, 12, 10, 2 ]
+    },
+    {
+      "Code": 14,
+      "Value": "弱",
+      "Type": 2,
+      "DistanceFromCenter": 1,
+      "StrongAttackTarget": [ 4, 15 ],
+      "NeighborAttribute": [ 5, 9, 12, 7 ]
+    },
+    {
+      "Code": 15,
+      "Value": "覇",
+      "Type": 2,
+      "DistanceFromCenter": 1,
+      "StrongAttackTarget": [ 14, 18 ],
+      "NeighborAttribute": [ 6, 11, 2, 10 ]
+    },
+    {
+      "Code": 16,
+      "Value": "忙",
+      "Type": 2,
+      "DistanceFromCenter": 1,
+      "StrongAttackTarget": [ 1, 8, 17 ],
+      "NeighborAttribute": [ 7, 12, 10, 2 ]
+    },
+    {
+      "Code": 17,
+      "Value": "暇",
+      "Type": 2,
+      "DistanceFromCenter": 1,
+      "StrongAttackTarget": [ 3, 13, 16 ],
+      "NeighborAttribute": [ 5, 9, 6, 11 ]
+    },
+    {
+      "Code": 18,
+      "Value": "光",
+      "Type": 0,
+      "DistanceFromCenter": 3,
+      "StrongAttackTarget": [ 4, 15 ],
+      "NeighborAttribute": [ 5, 9, 12, 7 ]
+    }
+  ],
+  "DefaultNames": [
+    "まさお",
+    "花子",
+    "ヤス",
+    "バーニア",
+    "ジョン",
+    "克彦",
+    "アンドレア",
+    "トニー",
+    "ゴードン",
+    "ラインハルト",
+    "モルト",
+    "太郎",
+    "ヨシオ",
+    "ジョセフィーヌ"
+  ],
+  "DefaultWinComment": [
+    "出直してこい",
+    "口ほどにもない",
+    "10年早い",
+    "強くなるが良い",
+    "カ・イ・カ・ン",
+    "・・・",
+    "小童め",
+    "首を洗って出直しな",
+    "ククク・・・",
+    "タマンねぇなぁ",
+    "よっしゃー"
+  ],
+  "DefaultLoseComment": [
+    "今日は体調が悪かっただけだ",
+    "今日のところは勘弁してやろう",
+    "これが本気だと思うなよ",
+    "ここまでコケにされたのは（略",
+    "これ以上は封印が解けてしまう",
+    "負けた・・・だと・・・",
+    "これで勝ったと思うなよ"
+  ],
+  "DefaultBattleComment": [
+    "まだまだ！",
+    "これでもか！",
+    "滅せよ！",
+    "爆ぜろ！",
+    "ここからが勝負だ",
+    "封印が解けてしまう・・・",
+    "奴が来る・・・",
+    "お遊びはここまでだ",
+    "ここからが勝負だ",
+    "本気を見せてやるよ",
+    "俺の右腕が・・・",
+    "やめろ、これ以上本気にさせないでくれ",
+    "覚醒する・・・",
+    "宇宙の声が聞こえる"
+  ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FNO.Controls.HPBar">
+    <ContentView.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <BoxView x:Name="Back" BackgroundColor="{StaticResource Background}" Opacity="0.5" Grid.ColumnSpan="2"
+                     VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Label Text="HP" TextColor="{StaticResource ItemLabelColor}" Grid.Column="0" HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,10,0"/>
+            <!-- BoxView Grid.Column="1" WidthRequest="{Binding CurrentHP}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Black" / -->
+            <!-- BoxView x:Name="Bar" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="FillAndExpand" BackgroundColor="Red" / -->
+            <Label x:Name="HPLabel" FontSize="{StaticResource LargeFontSize}" Text="{Binding CurrentHP}" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <!-- BoxView Grid.ColumnSpan="2" HeightRequest="2" BackgroundColor="{StaticResource Foreground}" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Opacity="0.7"/ -->
+            <!-- BoxView Grid.ColumnSpan="2" HeightRequest="2" BackgroundColor="{StaticResource Foreground}" VerticalOptions="End" HorizontalOptions="FillAndExpand" Opacity="0.7"/ -->
+        </Grid>
+    </ContentView.Content>
+</ContentView>

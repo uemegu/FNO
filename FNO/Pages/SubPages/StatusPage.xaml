@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:BaseSubPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:view="clr-namespace:FNO.Pages.SubPages"
+    xmlns:controls="clr-namespace:FNO.Controls"
+    x:Class="FNO.Pages.SubPages.StatusPage">
+    <view:BaseSubPage.Content>
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical">
+                <Grid HeightRequest="{StaticResource PlateHeight}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <controls:NamePlate Grid.Column="0" BindingContext="{Binding User}"/>
+                    <controls:StatusParameters Grid.Column="1" BindingContext="{Binding User}" />
+                    <controls:MagicCircle VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Column="0" Opacity="0.5"/>
+                    <BoxView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="0.3"
+                             BackgroundColor="{StaticResource Foreground}" Grid.ColumnSpan="2"/>
+                </Grid>
+                <Grid HorizontalOptions="CenterAndExpand" Margin="10, 20, 10, 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label Text="属性所持数" Grid.Column="0" Grid.Row="0" HorizontalOptions="Center" TextColor="{StaticResource ItemLabelColor}"/>
+                    <Label Text="{Binding User.HoldNumber}" Grid.Row="0" FontSize="{StaticResource MiddleFontSize}" Grid.Column="1" HorizontalOptions="Center"/>
+                    <StackLayout x:Name="AttributeDisplay" Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="End" HorizontalOptions="Center"></StackLayout>
+                    <StackLayout x:Name="AttributeDisplay2" Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="End" HorizontalOptions="Center"></StackLayout>
+                </Grid>
+                <Grid HorizontalOptions="CenterAndExpand" Margin="0, -10, 0, 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <controls:Chu2Name BindingContext="{Binding User.MainName}" x:Name="MainChu2Name" Grid.Column="0" Margin="10"/>
+                    <controls:Chu2Name BindingContext="{Binding User.SubName}" x:Name="SubChu2Name" Grid.Column="1" Margin="10"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="230"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <controls:MenuButton Name="二つ名を確認する" SubName="Check True Names" Margin="5" Grid.Row="0" Grid.Column="1" Clicked="Handle_Chu2Name"/>
+                    <controls:MenuButton Name="復活の呪文を確認する" SubName="Check Spell for Revival" Margin="5" Grid.Row="1" Grid.Column="1" Clicked="Handle_Revival"/>
+                    <controls:MenuButton Name="魂の系譜を確認する" SubName="Check Soul History" Margin="5" Grid.Row="2" Grid.Column="1" Clicked="Handle_History"/>
+                    <controls:MenuButton Name="セリフを確認する" SubName="Check Cry of the Soul" Margin="5" Grid.Row="3" Grid.Column="1" Clicked="Handle_Comment"/>
+                </Grid>
+            </StackLayout>
+            <controls:TransitionButton Text="Back" Clicked="Handle_Clicked" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Margin="0, 0, 0, 30"/>
+        </Grid>
+    </view:BaseSubPage.Content>
+</view:BaseSubPage>

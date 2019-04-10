@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:BaseSubPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:view="clr-namespace:FNO.Pages.SubPages"
+    xmlns:controls="clr-namespace:FNO.Controls"
+    x:Class="FNO.Pages.SubPages.ClearPage">
+    <view:BaseSubPage.Content>
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Image x:Name="BackImage" Aspect="Fill" ></Image>
+            <Label Text="全属性コンプリート" TextColor="{StaticResource AccentColor}" Margin="0,30,0,0" 
+                   HorizontalOptions="Center" FontSize="{StaticResource LargeFontSize}"/>
+            <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                <Label Text="全属性コンプリートおめでとうございます" HorizontalOptions="Center"/>
+                <Label Text="今後は二つ名を奪われることはありません" HorizontalOptions="Center" />
+                <Label Text="心ゆくまでFNOをお楽しみください" HorizontalOptions="Center" />
+            </StackLayout>
+            <controls:TransitionButton x:Name="BackButton" Text="Back" Clicked="Handle_Back" HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="End" Margin="0, 0, 0, 30"/>
+        </Grid>
+    </view:BaseSubPage.Content>
+</view:BaseSubPage>

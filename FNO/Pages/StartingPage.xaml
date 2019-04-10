@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:BasePage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:view="clr-namespace:FNO.Pages"
+    xmlns:controls="clr-namespace:FNO.Controls"
+    x:Class="FNO.Pages.StartingPage">
+    <view:BasePage.Content>
+        <Grid>
+            <Grid x:Name="First" IsVisible="false" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <controls:Explanation x:Name="Explain" />
+                <controls:NextBack ClickButton="{Binding Command}" ButtonType="{Binding NavigationType}" />                
+            </Grid>
+            <Grid IsVisible="false" x:Name="InputArea" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <ScrollView Orientation="Vertical">
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+                        <Label Text="プレイヤー名(10文字以内)" />
+                        <Entry x:Name="NameEntry" WidthRequest="200" Margin="0,0,0,20" TextChanged="Handle_TextChanged"/>
+                        <Label Text="勝った時のセリフ(20文字以内)" />
+                        <Entry x:Name="WinEntry" WidthRequest="200" Margin="0,0,0,20" TextChanged="Handle_TextChanged"/>
+                        <Label Text="負けた時のセリフ(20文字以内)" />
+                        <Entry x:Name="LoseEntry" WidthRequest="200" Margin="0,0,0,20" TextChanged="Handle_TextChanged"/>
+                        <Label Text="戦闘中のセリフ１〜３(20文字以内)" />
+                        <Entry x:Name="BattleEntry1" WidthRequest="200" TextChanged="Handle_TextChanged"/>
+                        <Entry x:Name="BattleEntry2" WidthRequest="200" TextChanged="Handle_TextChanged"/>
+                        <Entry x:Name="BattleEntry3" WidthRequest="200" Margin="0,0,0,20" TextChanged="Handle_TextChanged"/>
+                    </StackLayout>
+                </ScrollView>
+                <controls:NextBack x:Name="NextBotton" VerticalOptions="End" ClickButton="{Binding Command}" ButtonType="{Binding NavigationType}" />                
+            </Grid>
+            <Grid x:Name="Second" IsVisible="false" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical" x:Name="GetResult" VerticalOptions="Center">
+                    <Label Text="新しい二つ名を手に入れました"  HorizontalOptions="Center"/>
+                </StackLayout>
+            </Grid>
+            <Grid x:Name="Third" IsVisible="false" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                    <Label x:Name="ThirdLabel" Style="{StaticResource MinchoLabel}" FontSize="{StaticResource MiddleFontSize}" HorizontalOptions="Center"/>
+                </StackLayout>
+                <controls:NextBack VerticalOptions="End" ClickButton="{Binding Command}" ButtonType="{Binding NavigationType}" />                
+            </Grid>
+        </Grid>
+    </view:BasePage.Content>
+</view:BasePage>

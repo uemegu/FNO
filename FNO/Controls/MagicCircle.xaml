@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FNO.Controls.MagicCircle">
+    <ContentView.Content>
+        <Grid>
+            <Image x:Name="BackImage" Aspect="Fill" IsVisible="false" Opacity="0.3"/>
+            <Image x:Name="Circle" />
+        </Grid>
+    </ContentView.Content>
+</ContentView>

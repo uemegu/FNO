@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FNO.Controls.TransitionButton">
+    <ContentView.Content>
+        <Grid>
+            <Button Text="{Binding Text}" Clicked="Handle_Clicked" Command="{Binding Command}" VerticalOptions="End" HorizontalOptions="FillAndExpand" />
+            <BoxView HeightRequest="2" BackgroundColor="{StaticResource AccentColor}" VerticalOptions="End" HorizontalOptions="FillAndExpand"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

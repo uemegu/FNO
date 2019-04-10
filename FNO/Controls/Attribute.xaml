@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FNO.Controls.Attribute">
+    <ContentView.Content>
+        <Grid x:Name="Container" BackgroundColor="{Binding CharactorColor}" MinimumWidthRequest="15" MinimumHeightRequest="15">
+            <Label x:Name="AttributeLabel2" TextColor="{StaticResource Background}"
+                   Text="{Binding AttributeName}" FontSize="{StaticResource SmallFontSize}" 
+                   HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Margin="2"/>
+            <Label x:Name="AttributeLabel" TextColor="{StaticResource ItemLabelColor}"
+                   Text="{Binding AttributeName}" FontSize="{StaticResource SmallFontSize}" 
+                   HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

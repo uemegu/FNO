@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:BaseSubPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:view="clr-namespace:FNO.Pages.SubPages"
+    xmlns:controls="clr-namespace:FNO.Controls"
+    x:Class="FNO.Pages.SubPages.Chu2NameListPage">
+    <view:BaseSubPage.Content>
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" Margin="0, 20, 0, 0">
+                <Grid HorizontalOptions="CenterAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="所持数" Grid.Column="0" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" TextColor="{StaticResource ItemLabelColor}"/>
+                    <Label Text="{Binding User.AmountOfNames}" VerticalOptions="CenterAndExpand" Grid.Column="1" HorizontalOptions="Center" FontSize="{StaticResource MiddleFontSize}"/>
+                    <BoxView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="0.3"
+                             BackgroundColor="{StaticResource Foreground}" Grid.ColumnSpan="2"/>
+                </Grid>
+                <Label Text="二つ名をタップするとメイン/サブにセットできます" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource ItemLabelColor}"/>
+            </StackLayout>
+            <ScrollView Margin="0, 110, 0, 70">
+                <controls:Chu2NameList x:Name="List" />
+            </ScrollView>
+            <controls:TransitionButton Text="Back" Clicked="Handle_Clicked" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Margin="0, 0, 0, 30"/>
+        </Grid>
+    </view:BaseSubPage.Content>
+</view:BaseSubPage>

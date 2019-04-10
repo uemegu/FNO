@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:BasePage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:view="clr-namespace:FNO.Pages"
+    xmlns:controls="clr-namespace:FNO.Controls"
+    x:Class="FNO.Pages.MainPage">
+    <view:BasePage.Content>
+        <Grid x:Name="Container">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="{StaticResource PlateHeight}"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image x:Name="Back" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="StartAndExpand" />
+                <StackLayout Orientation="Vertical" Margin="0, 30, 0, 0">
+                    <controls:MenuButton Name="祈りを捧げる" SubName="Pray for Name" Margin="20" Clicked="Handle_Pray"/>
+                    <controls:MenuButton Name="運命の戦い" SubName="Battle of Fate" Margin="20" Clicked="Handle_Battle"/>
+                    <controls:MenuButton Name="能力の確認" SubName="Check Skills" Margin="20" Clicked="Handle_Status"/>
+                    <controls:MenuButton Name="ヘルプを見る" SubName="Help our Soul" Margin="20" Clicked="Handle_Help"/>
+                    <StackLayout Orientation="Vertical" x:Name="PredictArea" Margin="5,30,0,0">
+                        <Label Text="{Binding Word.Word1}" TextColor="{StaticResource ItemLabelColor}" FontSize="{StaticResource SmallFontSize}" Style="{StaticResource MinchoLabel}"/>
+                        <Label Text="{Binding Word.Word2}" TextColor="{StaticResource ItemLabelColor}" FontSize="{StaticResource SmallFontSize}" Style="{StaticResource MinchoLabel}"/>
+                        <Label Text="{Binding Word.Word3}" TextColor="{StaticResource ItemLabelColor}" FontSize="{StaticResource SmallFontSize}" Style="{StaticResource MinchoLabel}"/>
+                        <Label Text="{Binding Word.Word4}" TextColor="{StaticResource ItemLabelColor}" FontSize="{StaticResource SmallFontSize}" Style="{StaticResource MinchoLabel}"/>
+                        <Label Text="{Binding Word.Word5}" TextColor="{StaticResource ItemLabelColor}" FontSize="{StaticResource SmallFontSize}" Style="{StaticResource MinchoLabel}"/>
+                        <Label Text="{Binding Word.Word6}" TextColor="{StaticResource ItemLabelColor}" FontSize="{StaticResource SmallFontSize}" Style="{StaticResource MinchoLabel}"/>
+                    </StackLayout>
+                </StackLayout>
+                <controls:Charactor BindingContext="{Binding User}" Grid.Column="1" x:Name="MyImage"
+                                    HorizontalOptions="End" VerticalOptions="FillAndExpand" />
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <controls:NamePlate Grid.Column="0" BindingContext="{Binding User}"/>
+                    <controls:StatusParameters Grid.Column="1" BindingContext="{Binding User}" />
+                    <controls:MagicCircle VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Column="0" Opacity="0.5"/>
+                    <BoxView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="0.3"
+                             BackgroundColor="{StaticResource Foreground}" Grid.ColumnSpan="2"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </view:BasePage.Content>
+</view:BasePage>

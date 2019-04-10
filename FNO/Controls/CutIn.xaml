@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FNO.Controls.CutIn">
+    <ContentView.Content>
+        <Grid x:Name="Area" Padding="0, 20, 0, 20" VerticalOptions="Center" HorizontalOptions="FillAndExpand" HeightRequest="{StaticResource PlateHeight}">
+            <BoxView x:Name="Back" BackgroundColor="{StaticResource Background}" Opacity="0.8"
+                     VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Label x:Name="Discription" Text="{Binding Text}" IsVisible="false" FontSize="{StaticResource MiddleFontSize}"
+                   VerticalOptions="Center" HorizontalOptions="CenterAndExpand" />
+            <BoxView HeightRequest="2" BackgroundColor="{StaticResource Foreground}" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Opacity="0.7"/>
+            <BoxView HeightRequest="2" BackgroundColor="{StaticResource Foreground}" VerticalOptions="End" HorizontalOptions="FillAndExpand" Opacity="0.7"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

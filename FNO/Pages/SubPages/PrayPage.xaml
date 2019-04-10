@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:BaseSubPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:view="clr-namespace:FNO.Pages.SubPages"
+    xmlns:controls="clr-namespace:FNO.Controls"
+    x:Class="FNO.Pages.SubPages.PrayPage">
+    <view:BaseSubPage.Content>
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid x:Name="First" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical" x:Name="HasRestCount" IsVisible="false" VerticalOptions="Center">
+                    <Label Text="新しい二つ名を手に入れますか？"  HorizontalOptions="Center"/>
+                    <Label x:Name="RestCountString"  HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" x:Name="NoRestCount" IsVisible="false" VerticalOptions="Center">
+                    <Label Text="新しい二つ名を手に入れますか？"  HorizontalOptions="Center"/>
+                    <Label Text="残り回数がないため動画を見る必要があります" FontSize="{StaticResource SmallFontSize}"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+                <controls:NextBack ButtonType="BACK_NEXT" Next="Handle_Next" Back="Handle_Back"
+                                   HorizontalOptions="CenterAndExpand" VerticalOptions="End" Margin="0, 0, 0, 30"/>
+            </Grid>
+            <Grid x:Name="Second" IsVisible="false" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Label x:Name="AchiveText" Margin="0,30,0,0" HorizontalOptions="Center" FontSize="{StaticResource MiddleFontSize}"/>
+                <StackLayout Orientation="Vertical" x:Name="GetResult" VerticalOptions="Center">
+                    <Label Text="新しい二つ名を手に入れました"  HorizontalOptions="Center"/>
+                </StackLayout>
+                <controls:TransitionButton x:Name="BackButton" Text="Back" Clicked="Handle_Back" HorizontalOptions="CenterAndExpand"
+                                           VerticalOptions="End" Margin="0, 0, 0, 30"/>
+            </Grid>
+            <StackLayout Orientation="Vertical" x:Name="StartPray" VerticalOptions="Start" IsVisible="false" Margin="0,60,0,0">
+                <Label Text="二つ名を授けよう" Style="{StaticResource MinchoLabel}" x:Name="StartPrayText" HorizontalOptions="Center" FontSize="{StaticResource LargeFontSize}"/>
+            </StackLayout>
+        </Grid>
+    </view:BaseSubPage.Content>
+</view:BaseSubPage>
