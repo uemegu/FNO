@@ -88,6 +88,7 @@ namespace FNO.ViewModels
 
         public async Task Reload(UserProfile profile)
         {
+            // トランザクションを使っていれば、ここでマージ処理しなくても良かったかも・・・
             var needNotification = false;
             foreach (var name in profile.RobbedNames)
             {
